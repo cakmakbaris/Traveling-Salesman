@@ -11,7 +11,7 @@ Both methods work on the same set of 2D points (cities) read from an input file,
 
 ## 📁 Project Structure
 
-- `BarisCakmak.java`  
+- `Main.java`  
   Main class. Reads the input file, builds the list of nodes, selects the method (Brute Force or ACO), invokes the algorithm, and triggers drawing.
 
 - `Nodes.java`  
@@ -19,7 +19,7 @@ Both methods work on the same set of 2D points (cities) read from an input file,
   - `x`, `y` coordinates in the unit square,
   - an integer `nodeIndex` used as an ID.
 
-Other important **methods inside `BarisCakmak`**:
+Other important **methods inside `Main`**:
 
 - `bruteForce(ArrayList<Nodes> nodesArrayList)`  
   Runs exhaustive search on all permutations of nodes (starting and ending at node 0), finds the shortest route, prints distance and path, and calls the drawing routine.
@@ -155,7 +155,7 @@ You can create multiple input files (e.g., `input01.txt`, `input02.txt`, etc.) a
 
    Ensure you have:
 
-   - `BarisCakmak.java`
+   - `Main.java`
    - `Nodes.java`
    - `StdDraw.java`
    - `input04.txt` (or another input file; adjust the filename in `main` if needed)
@@ -163,13 +163,13 @@ You can create multiple input files (e.g., `input01.txt`, `input02.txt`, etc.) a
 2. **Compile**
 
    ```bash
-   javac BarisCakmak.java Nodes.java StdDraw.java
+   javac Main.java Nodes.java StdDraw.java
    ```
 
 3. **Run**
 
    ```bash
-   java BarisCakmak
+   java Main
    ```
 
 4. **Choose Method (if you add input) or adjust in code**
